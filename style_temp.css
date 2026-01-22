@@ -1,6 +1,6 @@
 /* Body layout */
 body {
-  height: 100vh;
+  height: 100dvh;
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ img {
 
 /* Card container with perspective */
 .cards {
-  width: 450px;                  /* fixed width */
+  max-width: 450px;                 /* fixed width */
   aspect-ratio: 16 / 10;         /* minimum height based on width */
   min-height: auto;               /* allows it to grow */
   perspective: 1000px;
