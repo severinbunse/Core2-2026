@@ -1,7 +1,7 @@
 /* Body layout */
 body {
   height: 100vh;
-  margin: 20px;
+  margin: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,6 +29,7 @@ img {
   aspect-ratio: 16 / 10;         /* minimum height based on width */
   min-height: auto;               /* allows it to grow */
   perspective: 1000px;
+  margin: 20px;
 }
 
 /* Inner card that rotates */
@@ -74,10 +75,17 @@ img {
   backface-visibility: hidden;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: black;
 }
 
 /* Back side rotation */
 .cards-back {
   transform: rotateY(180deg);
   padding: 20px;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body {
+    font-size: 12px;
+  }
 }
