@@ -82,5 +82,15 @@
   </div>
 </div>
 
+<script>
+  const cards = document.querySelectorAll('.cards');
+  
+  cards.forEach(card => {
+    card.addEventListener('click', function() {
+      this.classList.toggle('flipped');
+    });
+  });
+</script>
+
 </body>
 </html>
