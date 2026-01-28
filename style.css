@@ -1,15 +1,15 @@
-/* Body layout */
+
 body {
-  height: 100dvh;
-  margin: 0px;
+  height: 100vh;
+  margin: 20px;
+  gap: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   background-color: rgb(238, 238, 238);
+  align-content: flex-start;
 }
 
 img {
@@ -23,21 +23,15 @@ img {
   justify-content: space-between;
 }
 
-/* Card container with perspective */
 .cards {
-  max-width: 450px;                 /* fixed width */
-  /*aspect-ratio: 16 / 10;         /* minimum height based on width */*/
-  min-height: auto;               /* allows it to grow */
-  perspective: 1000px;
-  margin: 20px;
+  width: 500px;
 }
 
-/* Inner card that rotates */
 .cards-inner {
   position: relative;
   width: 100%;
-  min-height: 100%;               /* ensures at least aspect ratio height */
-  display: grid;                  /* stack front and back */
+  min-height: 350px;              
+  display: grid;                
   grid-template-areas: "card";
   transition: transform 0.4s ease-in-out;
   transform-style: preserve-3d;
@@ -45,12 +39,10 @@ img {
   border-radius: 20px;
 }
 
-/* Flip effect on hover */
 .cards:hover .cards-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and back sides */
 .cards-front, .cards-back {
   grid-area: card;
   width: 100%;
@@ -59,26 +51,22 @@ img {
   border-radius: 20px;
   backface-visibility: hidden;
   display: flex;
-  align-items: flex-start;  /* top-align content */
-
   box-sizing: border-box;
 }
 
-/* Front side: center content vertically */
+
 .cards-front {
   display: flex;
-  align-items: center;      /* vertical centering */
-  justify-content: center;  /* horizontal centering */
+  align-items: center;     
+  justify-content: center; 
   text-align: center; 
   border: 1px solid black;
   border-radius: 20px;
   backface-visibility: hidden;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: black;
 }
 
-/* Back side rotation */
 .cards-back {
   transform: rotateY(180deg);
   padding: 20px;
@@ -86,6 +74,18 @@ img {
 
 @media (max-width: 767px) and (orientation: portrait) {
   body {
+    align-items: flex-start;
+    height: 100%;
+    margin: 10px;
     font-size: 12px;
+    gap: 10px;
+  }
+
+  .cards {
+    margin: 0px;
+  }
+
+  .cards-inner {
+      min-height: 250px;  
   }
 }
