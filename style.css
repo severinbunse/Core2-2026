@@ -108,7 +108,7 @@ img {
 .cards.flipped .cards-inner {
   transform: rotateY(180deg);
 }
-@media (max-width: 767px) and (orientation: portrait) {
+@media (max-width: 498px) and (orientation: portrait) {
   body {
     align-items: flex-start;
     height: 100%;
@@ -122,5 +122,35 @@ img {
   }
   .cards-inner {
       min-height: 200px;  
+  }
+}
+
+@media (max-width: 498px) and (orientation: portrait) {
+  .cards {
+    min-width: 338px;
+    min-height: 498px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .cards-inner {
+    min-height: 498px;
+  }
+  .cards-front .cards-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-front img {
+    max-width: none;
+    width: 498px;
+    height: 100vw;
+    object-fit: cover;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    display: block;
   }
 }
