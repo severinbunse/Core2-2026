@@ -80,7 +80,7 @@ img {
   transform: rotateY(180deg);
   padding: 20px;
   background-color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .project-urls .cards-back {
   display: flex;
@@ -98,7 +98,7 @@ img {
   overflow: hidden;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 
