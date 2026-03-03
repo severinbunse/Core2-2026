@@ -16,7 +16,8 @@ img {
   background-color: antiquewhite;
 }
 .cards-front .cards-content:not(:has(img)) {
-  font-size: 14px;
+  font-size: 18px;
+  color: black;
 }
 .cards-front .cards-content:has(img) {
   width: 100%;
@@ -74,7 +75,6 @@ img {
   backface-visibility: hidden;
   box-sizing: border-box;
   overflow: hidden;
-
 }
 .cards-back {
   transform: rotateY(180deg);
@@ -100,7 +100,6 @@ img {
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Only apply hover on devices that support hover (desktop) */
 @media (hover: hover) {
