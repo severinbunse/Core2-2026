@@ -19,7 +19,7 @@ img {
 
 .cards-front .cards-content:not(:has(img)) {
   font-size: 18px;
-  color: black;
+  color: inherit;
 }
 
 .cards-front .cards-content:has(img) {
@@ -48,7 +48,7 @@ img {
 
 .cards-inner {
   flex: 1;
-  min-height: 300px;
+  min-height: 344px;
   position: relative;
   width: 100%;
   display: grid;
@@ -96,7 +96,8 @@ img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-.project-urls .cards-back {
+.project-urls .cards-back,
+.centered .cards-back {
   display: flex;
   align-items: center;
   justify-content: center;
