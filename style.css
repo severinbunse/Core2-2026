@@ -151,13 +151,13 @@ img {
 @media (max-width: 498px) and (orientation: portrait) {
   .cards {
     min-width: 338px;
-    min-height: 581.31px;
+    min-height: 523.25px;
     width: 100%;
     max-width: 100%;
   }
 
   .cards-inner {
-    min-height: 581.31px;
+    min-height: 523.25px;
   }
 
   .cards-front img {
