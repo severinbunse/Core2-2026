@@ -17,7 +17,10 @@
     <div class="cards-inner">
       <div class="cards-front" style="background-color: red;">
         <div class="cards-content">
-         <img src="images/61duOYQYe5L._AC_UF1000,1000_QL80_.jpg" alt="Project Image">
+         <picture>
+           <source media="(max-width: 498px) and (orientation: portrait)" srcset="images/61duOYQYe5L-mobile.jpg">
+           <img src="images/61duOYQYe5L._AC_UF1000,1000_QL80_.jpg" alt="Project Image">
+         </picture>
         </div>
       </div>
       <div class="cards-back" style="background-color: rgba(0,0,0,0.03);">
@@ -99,9 +102,9 @@
       </div>
       <div class="cards-back" style="background-color: rgba(0,0,0,0.03);">
         <div class="cards-content">
-          <a href="https://walkerart.org/magazine/sharing-as-survival-mindy-seu-cyberfeminism-index/">Sharing as Survival</a> by Mindy Seu.<br>
-          <a href="https://issue1.shiftspace.pub/on-gathering-mindy-seu">On Gathering</a> by Mindy Seu.<br>
-          <a href="https://www.are.na/block/11555421">The Carrier Bag Theory of Fiction</a> by Ursula K. Le Guin.<br>
+          <a href="https://walkerart.org/magazine/sharing-as-survival-mindy-seu-cyberfeminism-index/">Sharing as Survival</a>, Mindy Seu.<br>
+          <a href="https://issue1.shiftspace.pub/on-gathering-mindy-seu">On Gathering</a>, Mindy Seu.<br>
+          <a href="https://www.are.na/block/11555421">The Carrier Bag Theory of Fiction</a>, Ursula K. Le Guin.<br>
         </div>
       </div>
     </div>
@@ -112,7 +115,10 @@
     <div class="cards-inner">
       <div class="cards-front" style="background-color: #BFFF00;">
         <div class="cards-content">
-         <img src="images/Winamp.jpg" alt="Project Image">
+         <picture>
+           <source media="(max-width: 498px) and (orientation: portrait)" srcset="images/Winamp-mobile.jpg">
+           <img src="images/Winamp.jpg" alt="Project Image">
+         </picture>
         </div>
       </div>
       <div class="cards-back" style="background-color: rgba(0,0,0,0.03);">
@@ -204,10 +210,13 @@
     <div class="cards-inner">
       <div class="cards-front" style="background-color: black;">
         <div class="cards-content">
-         <img src="images/Xandu.jpg" alt="Project Image">
+         <picture>
+           <source media="(max-width: 498px) and (orientation: portrait)" srcset="images/Xandu-mobile.jpg">
+           <img src="images/Xandu.jpg" alt="Project Image">
+         </picture>
         </div>
       </div>
-      <div class="cards-back" style="background-color: rgba(0,0,0,0.03);">
+      <div class="cards-back project1-back" style="background-color: rgba(0,0,0,0.03);">
         <div class="cards-content">
           <div class="header"><div><b>Project 1: Non-linear Space</div><div>Due: Feb 17</b></div></div>
               <br>
@@ -217,7 +226,7 @@
             <br><br>
             On the back:<br>
             Ted Nelson's lifelong project, Xanadu, was his vision of what the web could have been—a place where documents are permanently linked, sources remain visible, and content can be reused without copying.<a href="https://youtu.be/Bqx6li5dbEY?si=M_Jqo_87kSl-FTFm">
-              <br> Ted Nelson in Herzog's "Lo and Behold"</a>
+            Ted Nelson in Herzog's "Lo and Behold"</a>
         </div>
       </div>
     </div>
@@ -282,27 +291,11 @@
 
   <script>
     document.querySelectorAll('.cards').forEach(card => {
-
-      // Shading on hover (desktop)
-      card.addEventListener('mouseenter', () => {
-        card.classList.remove('shade-out');
-        card.classList.add('shade-in');
-      });
-
-      card.addEventListener('mouseleave', () => {
-        card.classList.remove('shade-in');
-        card.classList.add('shade-out');
-      });
-
-      // Flip + shade on click (touch devices only)
       card.addEventListener('click', () => {
         if (window.matchMedia('(hover: none)').matches) {
-          const isFlipped = card.classList.toggle('flipped');
-          card.classList.remove('shade-in', 'shade-out');
-          card.classList.add(isFlipped ? 'shade-in' : 'shade-out');
+          card.classList.toggle('flipped');
         }
       });
-
     });
   </script>
 
