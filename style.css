@@ -81,19 +81,10 @@ img {
   box-sizing: border-box;
 }
 
-.project-urls .cards-front {
-  background-color: white;
-  color: black;
-}
-
 .cards-front {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  box-sizing: border-box;
   overflow: hidden;
   position: relative;
   background-color: white;
@@ -127,7 +118,6 @@ a {
 a:hover {
   font-style: italic;
 }
-
 
 @media (min-width: 499px) {
   .project1-back {
@@ -163,15 +153,6 @@ a:hover {
 
   .cards {
     margin: 0px;
-  }
-
-  .cards-inner {
-    min-height: 200px;
-  }
-}
-
-@media (max-width: 498px) and (orientation: portrait) {
-  .cards {
     min-width: 338px;
     min-height: 523.25px;
     width: 100%;
