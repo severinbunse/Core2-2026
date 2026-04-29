@@ -120,6 +120,14 @@ img {
   margin: 0;
 }
 
+a {
+  color: #0000EE;
+}
+
+a:hover {
+  font-style: italic;
+}
+
 
 @media (min-width: 499px) {
   .project1-back {
@@ -140,6 +148,10 @@ img {
 }
 
 @media (max-width: 498px) and (orientation: portrait) {
+  .desktop-only {
+    display: none;
+  }
+
   body {
     align-items: flex-start;
     height: 100%;
